@@ -1,0 +1,336 @@
+body {
+	font-size: 1rem;
+	width: 100%;
+
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	font-family: monospace;
+	font-size: 1.7rem;
+	margin-top: .6rem
+}
+
+h3{}
+
+p{}
+
+a{
+	text-decoration: none;
+	color: darkgreen;
+	font-size: 1.15rem;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	height: auto;
+	background: lavender;
+	font-size: 1.3rem;
+	margin: -2.7rem auto auto auto;
+	width: 100%;
+	z-index: 2;
+}
+
+main {
+	margin-top: 2.7rem;
+}
+
+#header-img {}
+
+.logo {
+	height: 4rem;
+}
+
+#search{
+	padding: 1rem .5rem;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.search-input{
+	border-radius: .3rem;
+	height: 1.5rem;
+	min-width: 55%;
+}
+
+.search-btn{
+	background: orange;
+	border: 1px;
+	padding: .4rem .7rem;
+	border-radius: .25rem;
+	cursor: pointer;
+}
+
+#header-nav {
+/* 	float: right;
+	margin-right: 0; */
+}
+
+.navigation{
+	margin: 0 2rem 0 -5rem;
+	margin-right: 2rem;
+}
+
+.nav-bar{
+	list-style: none;
+	display: flex;
+}
+
+.nav-link{
+	margin: .7rem;
+	text-decoration: none;
+	color: darkcyan;
+}
+
+#container{
+	grid-area: 2/1/3/2;
+	background: lemonchiffon;
+	padding-top: .5rem
+}
+
+.product-img{
+	float: left;
+	width: 13rem;
+}
+
+#product{
+	min-height: 13rem;
+	max-width: 80%;
+	margin: 1rem auto;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 75% 24%;
+	grid-template-rows: auto auto;
+	grid-gap: 10px;
+}
+
+.products{
+	max-width: 33rem;
+	grid-area: 1/1/2/2;
+	padding: 1rem ;
+	background: lavenderblush;
+	border-radius: .3rem;
+}
+
+.product-name{}
+
+.price-tag{}
+
+#feedback {
+	position: sticky;
+	min-width: 100%;
+	text-align: center;
+	background: wheat;
+	padding: .5rem;
+	grid-area: 1/2/2/3;
+	max-height: 20rem;
+	overflow-y: auto;
+	scrollbar-width:  none;
+	border-radius: .3rem;
+}
+
+.feed{
+	margin-top: .8rem
+}
+
+
+#description,
+#similar,
+#contact {
+	width: 80%;
+	margin: 0 auto;
+}
+
+i{
+	color:darkOrange;
+}
+
+#description{
+	background: wheat;
+	margin: 1rem auto;
+	padding: 1rem;
+	display: grid;
+}
+
+.desc-card {
+	float: right;
+}
+
+.desc-img{
+	max-width: 18rem;
+	float: left;
+	margin: 0 2rem;
+}
+
+#video{
+	floa: left;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#similar{
+	background: wheat;
+	overflow: auto;
+	margin: 1rem auto;
+	padding: 1.1rem;
+}
+
+#similar-card{
+	margin: 0 auto;
+	display: flex;
+	overflow: auto;
+	scrollbar-width:  none;
+}
+
+.sim-card{
+	background: white;
+	margin: .3rem;
+	text-align: center;
+	margin: 0 auto;
+	min-width: 7rem;
+	padding: .07rem;
+	border-radius: .4rem;
+}
+
+.sim-card:hover{
+	box-shadow: 1px 5px 6px 2px gray;
+	transform: scale(1.05)
+}
+
+.sim-img{
+	max-width: 6rem;
+}
+
+#contact{
+	margin: 0 auto;
+}
+
+#form{
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	display: block;
+	max-width: 38rem;
+	font-size: 1.25rem;
+	background: wheat;
+	color: black;
+	margin: 0 auto;
+}
+
+.form-value{}
+
+.form-input{
+	display: block;
+	width: 95%;
+	margin: .5rem auto;
+	padding:0.5rem 0.6rem;
+	font-size: 1rem;
+	border-radius: .2rem;
+	border-width: 1px;
+	font-family: aria;
+}
+
+textarea{
+	resize: vertical;
+	width: 100%;
+	font-size: 1rem;
+	min-height: 7rem;
+	background: whitesmoke
+}
+
+#submit, .cart-btn{
+	display: block;
+	margin: 1rem auto;
+	width: 8rem;
+	cursor: pointer;
+	text-align: center;
+	padding: .5rem;
+	font: inherit;
+	background: #f68b1e;
+	border-radius: .5rem;
+	border: 1px solid grey;
+}
+
+#submit:hover, 
+.cart-btn:hover {
+	display: block;
+	transform: scale(1.05);
+}
+
+footer{
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+	width: 100%;
+	margin: 1rem auto;
+	background: lavender;
+}
+
+.soccial-acc, .foot-link{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin:0 auto ;
+}
+
+.soccial-acc_item, .foot-item{
+	margin: 1rem;
+	color:darkgreen;
+}
+
+.fab {color: darkgreen}
+
+.foot-link{
+	margin-bottom: 1rem;
+	text-decoration: none;
+}
+
+@media (max-width: 650px){
+	body{font-size: .9rem}
+	#product{
+		min-height: 13rem;
+		max-width: 76%;
+		margin: 1rem auto;
+		text-align: center;
+		display: flex;
+/* 		grid-template-columns: none;
+		grid-template-rows:none;
+		/grid-gap: 10px; */
+	}
+	#feedback{
+		display: none;
+	}
+	#description,
+  #similar,
+  #contact {
+	max-width: 90%;
+	margin: .5rem auto;
+	}
+	#description{
+		display: grid;
+		margin: auto;
+	}
+	.desc-img{
+		float: none;
+	}
+	.desc-card{
+		width: 95%;
+		
+	}
+	#search{display: none}
+	.nav-link{font-size: 1.1rem;
+		margin: .4rem;
+	}
+	.navigation{margin: 0 auto}
+	#form{
+		font-size: .9rem
+	}
+}
+
+@media(max-width: 460px){
+	
+	.nav-bar{margin: 1rem auto 1rem -2rem}
+	
+}
